@@ -7,6 +7,7 @@
   box-shadow: 0 .3rem 1rem rgba($darkGray, 0);
   background: transparent;
   transition: box-shadow $transitionBase;
+  z-index: 1;
 
   &:before {
     content: '';
@@ -29,12 +30,13 @@
   &-list {
     position: relative;
     list-style: none;
-    padding: 1px 0;
+    padding: 1px 1rem;
     max-height: 0;
     overflow-x: hidden;
     overflow-y: scroll;
     opacity: 0;
-    margin-right: -5px;
+    margin-left: -1rem;
+    margin-right: calc(-1rem - 5px);
     transition: opacity $transitionBase, max-height $transitionBase;
 
     &::-webkit-scrollbar {
