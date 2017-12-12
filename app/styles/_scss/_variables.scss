@@ -1,0 +1,17 @@
+$fontFamilyHebo: "Heebo";
+$fontFamilyBase: $fontFamilyHebo, sans-serif;
+$white: #fff;
+$lightGray: #e9e9e9;
+$darkGray: #181818;
+$baseColor: #008882;
+$transitionBase: .42s ease-out;
+$gardientLight: linear-gradient(to bottom right, #6654F1 0%, #EACCF8 48%, #69EACB 100%);
+$gardientLink: linear-gradient(to top right, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+$gardient0: linear-gradient(to top right, #43e97b 0%, #38f9d7 100%);
+$gardient1: linear-gradient(to top right, #fa709a 0%, #fee140 100%);
+$gardient2: linear-gradient(to top right, #cc208e 0%, #6713d2 100%);
+$gardient3: linear-gradient(to top right, #4facfe 0%, #00f2fe 100%);
+$dropShadow0: drop-shadow(0 .3rem 1.337rem rgba(darken(mix(#43e97b, #38f9d7), 13.37%), 0.5));
+$dropShadow1: drop-shadow(0 .3rem 1.337rem rgba(darken(mix(#fa709a, #fee140), 13.37%), 0.5));
+$dropShadow2: drop-shadow(0 .3rem 1.337rem rgba(darken(mix(#cc208e, #6713d2), 13.37%), 0.5));
+$dropShadow3: drop-shadow(0 .3rem 1.337rem rgba(darken(mix(#4facfe, #00f2fe), 13.37%), 0.5));

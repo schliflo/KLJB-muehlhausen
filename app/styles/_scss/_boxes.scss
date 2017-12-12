@@ -1,0 +1,26 @@
+.box {
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  color: $white;
+  max-width: 100%;
+}
+
+.gradient0 {
+  background: $gardient0;
+  filter: $dropShadow0;
+}
+
+.gradient1 {
+  background: $gardient1;
+  filter: $dropShadow1;
+}
+
+.gradient2 {
+  background: $gardient2;
+  filter: $dropShadow2;
+}
+
+.gradient3 {
+  background: $gardient3;
+  filter: $dropShadow3;
+}

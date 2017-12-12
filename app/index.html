@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta httpEquiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KLJB Mühlhausen</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:300,900">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3df1a9">
+  <meta name="theme-color" content="#3df1a9">
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body>
+<!--day night switch for bg-->
+<script>let h=new Date().getHours();if(h>19||h<7){document.querySelector('body').classList.add('night')}</script>
+<header class="box gradient0">
+  <a href="/">
+    <img src="images/KLJB-logo.svg" width="200" height="200"/>
+    <h1>KLJB <br>Mühlhausen</h1>
+  </a>
+</header>
+<aside class="box gradient1">
+  <h2 class="hidden event--headline" id="headline-upcoming">Wos o'steht</h2>
+  <ul class="event-list" id="upcoming">
+    <p class="hidden event--message" id="message-upcoming">Nix gwis woas ma ned...</p>
+  </ul>
+  <h2 class="hidden event--headline" id="headline-past">Wos scho vorbei is</h2>
+  <ul class="hidden event-list" id="past">
+    <p class="hidden event--message" id="message-past">Gibt's grad nix...</p>
+  </ul>
+</aside>
+<main class="box gradient2">
+  <h2>Servus!</h2>
+  <h3>Mir san de Landjugend aus Mühlhausen</h3>
+  <p>Des is unser Webseitn - eigentlich ned vui drauf aber wennst wissen wuist wia ma uns am besten dawischt dann aufgmerkt:</p>
+  <dl>
+    <dt>Vorstände</dt>
+    <dd>Stefanie Thoma<br>
+      Alexander Liedl</dd>
+    <dt>Adresse</dt>
+    <dd>Forststraße 10<br>
+      93333 Geibenstetten</dd>
+    <dt>E-Mail</dt>
+    <dd><a href="mailto:servus@kljb-muehlhausen.de">servus@kljb-muehlhausen.de</a></dd>
+    <dt>Facebook</dt>
+    <dd><a href="https://www.facebook.com/kljbmuehlhausen/" target="_blank" rel="noopener">facebook.com/kljbmuehlhausen</a></dd>
+    <dt>Mein Mühlhausen</dt>
+    <dd><a href="https://mein-muehlhausen.bayern/knowledgebase/kljb-muehlhausen/" target="_blank" rel="noopener">mein-muehlhausen.bayern/knowledgebase/kljb-muehlhausen</a></dd>
+  </dl>
+</main>
+<footer class="box gradient3"><span>&copy;&nbsp;2017&nbsp;KLJB&nbsp;Mühlhausen</span><span><a href="https://github.com/schliflo/KLJB-muehlhausen" target="_blank" rel="noopener">zam-bastlt</a> vom <a href="https://schliflo.de" target="_blank" rel="noopener">schliflo</a></span></footer>
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js" async defer></script>
+<!-- endbuild -->
+</body>
+</html>

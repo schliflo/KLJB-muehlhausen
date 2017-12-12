@@ -1,0 +1,159 @@
+* {
+  &,
+  &:before,
+  &:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+}
+
+html,
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  font-family: $fontFamilyBase;
+  box-sizing: border-box;
+
+  // default
+  & &.day {
+    background: $lightGray;
+  }
+
+  &.night {
+    background: $darkGray;
+  }
+}
+
+html {
+  $map: (1600px: 20px, 768px: 14px, 340px: 12px);
+  @include poly-fluid-sizing('font-size', $map);
+}
+
+body {
+  padding: 1.33rem;
+  display: grid;
+  grid-gap: 1.33rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-areas: "header" "main" "aside" "footer";
+}
+
+header {
+  grid-area: header;
+
+  a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: $white;
+  }
+
+  h1 {
+    display: block;
+    font-weight: 900;
+    line-height: 1.25;
+    font-size: 2rem;
+    padding-top: .5rem;
+  }
+
+  img {
+    height: 5rem;
+    width: 5rem;
+    margin: .25rem 1rem .25rem .25rem;
+  }
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: $white;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+h2 {
+  font-size: 2.33rem;
+}
+
+h3 {
+  font-size: 1.66rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: $white;
+}
+
+dl {
+  padding: .33rem 1rem;
+  border-left: 1px solid rgba($white, .33);
+
+  dt {
+    display: block;
+    font-weight: 900;
+    font-size: 1.33rem;
+  }
+
+  dd {
+    display: block;
+    + dt {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    padding: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header aside"
+      "main main aside"
+      "footer footer footer";
+  }
+
+  header {
+    h1 {
+      font-size: 4.2rem;
+      padding-top: .5rem;
+    }
+
+    img {
+      height: 9rem;
+      width: 9rem;
+      margin: 1rem 2rem 1rem 1rem;
+    }
+  }
+
+  footer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
