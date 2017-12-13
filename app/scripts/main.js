@@ -42,7 +42,7 @@
 
   // returns a formatted date string which works cross browsers (I'm looking at you, Safari)
   function getInterOperableDateString(dateString) {
-    return dateString.replace(/-/g, '/').replace('T', ' ').replace(/\..*|\+.*/, "");
+    return dateString.replace(/-/g, '/').replace('T', ' ').replace(/\..*|\+.*/, '');
   }
 
   function displayEvents(list, events, headline, message, open) {
@@ -102,4 +102,7 @@
     headlinePast.classList.toggle(classOpen);
     eventListPast.classList.toggle(classOpen);
   });
+
+  window.sr = ScrollReveal();
+  sr.reveal('.box');
 }());
