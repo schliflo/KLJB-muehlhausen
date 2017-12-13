@@ -22,7 +22,7 @@
     let pastEvents = [];
 
     for (let i = 0; i < json.data.length; i++) {
-      let eventDate = new Date(json.data[i].start_time);
+      let eventDate = new Date(getInterOperableDateString(json.data[i].start_time));
       if (eventDate >= currentDate) {
         upcomingEvents.push({
           date: eventDate,
@@ -39,6 +39,11 @@
     displayEvents(eventListUpcoming, upcomingEvents, headlineUpcoming, messageUpcoming, true);
     displayEvents(eventListPast, pastEvents, headlinePast, messagePast, upcomingEvents.length === 0);
   });
+
+  // returns a formatted date string which works cross browsers (I'm looking at you, Safari)
+  function getInterOperableDateString(dateString) {
+    return dateString.replace(/-/g, '/').replace('T', ' ').replace(/\..*|\+.*/, "");
+  }
 
   function displayEvents(list, events, headline, message, open) {
     headline.classList.remove(classHidden);
