@@ -102,7 +102,4 @@
     headlinePast.classList.toggle(classOpen);
     eventListPast.classList.toggle(classOpen);
   });
-
-  window.sr = ScrollReveal();
-  sr.reveal('.box');
 }());

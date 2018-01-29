@@ -124,6 +124,12 @@ dl {
   }
 }
 
+img {
+  max-width: 100%;
+  border-radius: .75rem;
+  height: auto;
+}
+
 @media (min-width: 1280px) {
   body {
     padding: 2rem;
@@ -131,10 +137,7 @@ dl {
     grid-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-      "header header aside"
-      "main main aside"
-      "footer footer footer";
+    grid-template-areas: "header header aside" "main main aside" "footer footer footer";
   }
 
   header {
