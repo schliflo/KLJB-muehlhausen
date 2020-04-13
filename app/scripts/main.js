@@ -1,6 +1,6 @@
 'use strict';
 (function() {
-  const fbEventsUrl = 'https://events.kljb-muehlhausen.de/fb-page-events.php?fields=description,end_time,id,name,place,start_time,cover';
+  const fbEventsUrl = 'https://kljb-muehlhausen.de/api/v1/events/?fields=description,end_time,id,name,place,start_time,cover';
   const classHidden = 'hidden';
   const classOpen = 'open';
   const eventListUpcoming = document.querySelector('ul.event-list#upcoming');
