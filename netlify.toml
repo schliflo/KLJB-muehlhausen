@@ -1,0 +1,6 @@
+# API redirects
+[[redirects]]
+  from = "/api/v1/events/*"
+  to = "https://events.kljb-muehlhausen.de/fb-page-events.php:splat"
+  status = 200
+  force = true
